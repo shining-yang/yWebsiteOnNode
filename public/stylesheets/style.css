@@ -1,0 +1,21 @@
+body {
+  font-family: "Segoe UI Light", Helvetica, Arial, sans-serif;
+  background-color: gainsboro;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  font-size: 40px;
+  text-align: center;
+  background-color: azure;
+  margin: -46px 0px 0px;
+}
+
+#footer {
+  font: 11px "Segoe UI";
+  text-align: center;
+  margin: 10px 0px;
+}

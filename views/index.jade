@@ -1,0 +1,15 @@
+extends layout
+
+block header
+  title= title
+  link(rel='stylesheet', href='/stylesheets/style.css')
+
+block content
+  #wrapper
+    .container
+      h1 Welcome !
+      p This website is still under development. For more technical details, visit&nbsp;
+        a(href="https://nodejs.org" target="_blank") nodejs.org
+        span .
+
+    include footer
