@@ -11,3 +11,5 @@ router.post('/', function (req, res) {
   console.log('Post data: ', req.body);
   res.end();
 });
+
+module.exports = router;
