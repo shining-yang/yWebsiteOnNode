@@ -1,11 +1,7 @@
-var express = require('express');
-var router = express.Router();
+var controllers = require('../controllers');
 
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', {
-    title: 'Welcome to yangshanning.me'
-  });
-});
-
-module.exports = router;
+exports.setup = function (app) {
+  app.get('/', controllers.home.get);
+  app.get('/wx', controllers.wechat.get);
+  app.post('/wx', controllers.wechat.post);
+};
